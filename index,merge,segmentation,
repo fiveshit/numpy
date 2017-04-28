@@ -56,7 +56,11 @@ np.vsplit(a,3) #Vertical axis segmentation = np.split(a,3,axis=0)
 np.hsplit(a,2) # Horizontal axis segmentation = np.split(a,2,axis=1)
 
 
------
+----- copy----------
+
+b = a.copy()  #deep copy
+
+b = a  # copy
 
 
 
