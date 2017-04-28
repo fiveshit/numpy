@@ -1,0 +1,63 @@
+a = np.arange(12).reshape((3,4))
+'''
+array([[ 0,  1,  2,  3],
+       [ 4,  5,  6,  7],
+       [ 8,  9, 10, 11]])
+'''
+a[1,1]
+'''
+5
+'''
+a[:,0]
+'''
+array([0, 4, 8])
+'''
+a[1,1:3]
+'''
+array([5, 6])
+'''
+
+a.flatten()  # pave
+'''
+array([ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11])
+'''
+
+------------merge------------------
+
+a = np.arange(10,22).reshape(3,4)
+b = np.array([1,2,3,10],
+             [4,5,6,11],
+             [7,8,9,12])
+c = np.vstack((a,b)) == np.concatenate((a,b),axis = 0)  #columns merge
+d = np.hstack((a,b)) == np.concatenate((a,b),axis = 1)  #row merge
+
+e = np.array([1,1,1])
+e[:,np,newaxis]
+'''
+array([[1],
+       [1],
+       [1]])
+'''
+
+---------segmentation-------------
+a = np.arange(12).reshape(3,4)
+'''
+array([[ 0,  1,  2,  3],
+       [ 4,  5,  6,  7],
+       [ 8,  9, 10, 11]])
+'''
+np.split(a,3,axis=0)
+'''
+[array([[0, 1, 2, 3]]), array([[4, 5, 6, 7]]), array([[ 8,  9, 10, 11]])]
+'''
+np.array_split(a,2,asix=1) # no equal segmentation
+
+np.vsplit(a,3) #Vertical axis segmentation = np.split(a,3,axis=0)
+np.hsplit(a,2) # Horizontal axis segmentation = np.split(a,2,axis=1)
+
+
+-----
+
+
+
+
