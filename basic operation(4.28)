@@ -74,13 +74,42 @@ c = np.dot(a,b)
 array([ 8, 17])
 '''
 
-np.random.random((2,4)) # 0~1 random count
+a = np.random.random((2,4)) # 0~1 random value
 '''
 array([[ 0.72759419,  0.6540658 ,  0.24474381,  0.2946395 ],
        [ 0.65996387,  0.8561156 ,  0.26258395,  0.4607531 ]])
 '''
+np.sum(a)
+
+np.min(a)
+
+np.max(a)
+
+np.sum(a,axis = 1)  # 1 is columns sum and 0 is row sum
+
+np.min(a,axis = 1)  # 1 is columns min and 0 is row min
+
+np.max(a,axis = 1)  # 1 is columns max and 0 is row max
+
+np.argmax(a) # choose max value local
+
+np.argmin(a) # choose min value local
+
+np.mean(a) = np.average(a)
+
+np.median(a) 
+
+np.cumsum(a) 
+
+np.diff(a) # front minus back
+
+np.nonzero(a) # no zero value
+
+np.sort(a)
+
+np.transpose(a)
+
+np.clip(a,0.2,0.9) # 0.2~0.9 value
 
 
-
-
-
+ 
